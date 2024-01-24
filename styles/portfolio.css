@@ -1,0 +1,90 @@
+body {background: #000;}
+/* header */
+header {}
+header nav {
+    display: flex; justify-content: space-between;
+    margin: 40px 40px;
+}
+header nav .left {position: fixed; z-index: 999; left: 40px;}
+header nav .left .all_menu {}
+header nav .left .all_menu img {}
+header nav .left .menu_open {
+    display: flex; flex-flow: column nowrap;
+    display: none;
+}
+header nav .left .menu_open a {
+    color: #fff; margin-top: 30px; font-size: 1.5rem;
+    
+}
+header nav .left .menu_open a:first-child {margin: 0;}
+header nav .right {position: fixed; z-index: 999; right: 40px;}
+header nav .right a {
+    color: #fff; margin-right: 30px;
+    font-size: 1.5rem; position: relative;
+}
+header nav .right a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+header nav .right a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+header nav .right a:last-child {margin: 0;}
+/* main intro*/
+main {margin: 300px auto;}
+main .intro {
+    background: #000; height: 100vh;
+}
+main .intro h1 {color: #fff; font-size: 5rem; text-align: center;}
+main .intro .name {display: flex; flex-flow: column nowrap; align-items: flex-end;}
+main .intro .name p {color: #fff; font-size: 2.5rem; position: relative; bottom: -300px;
+left: -50px;}
+/* main side btn */
+main .intro .side_btn {
+    display: flex; flex-flow: column nowrap;
+    position: fixed; z-index: 999; right: 1.5%; bottom: 45%;
+}
+main .intro .side_btn #page1,
+main .intro .side_btn #page2,
+main .intro .side_btn #page3,
+main .intro .side_btn #page4
+{
+    background: #fff;
+    border-radius: 50%; width: 12px; height: 12px;
+    display: block; margin-bottom: 18px;
+}
+/* 마우스 cursor */
+.circle {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    border: 1px solid #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: 0.1s;
+}
+main .about {
+    height: 100vh; background: #eee;
+}
+main .about h1 {
+    color: #000; font-size: 5rem;
+    position: absolute;
+}
+main .about p {
+    color: #000;
+}
+main .about p em {color: #000;}
