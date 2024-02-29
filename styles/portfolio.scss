@@ -43,11 +43,13 @@ body {
             .s1 {
                 background: $bg;
                 position: relative;
-                h1 {
-                    color: #333;
-                    font-size: 5rem;
-                    display: flex;
-                    justify-content: center;
+                .title {
+                    text-align: center;
+                    .img1{
+                        position: absolute;
+                        animation: title 1s infinite ease-in-out alternate;
+                    }
+                    .img2{}
                 }
                 .scrolldown {
                     position: absolute;
@@ -121,4 +123,8 @@ body {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-// JS 호출용 classList
+
+@keyframes title {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-50px);}
+}

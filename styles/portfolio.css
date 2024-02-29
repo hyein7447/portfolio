@@ -47,11 +47,12 @@ body main .wrap .s1 {
   background: #ede8e4;
   position: relative;
 }
-body main .wrap .s1 h1 {
-  color: #333;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
+body main .wrap .s1 .title {
+  text-align: center;
+}
+body main .wrap .s1 .title .img1 {
+  position: absolute;
+  animation: title 1s infinite ease-in-out alternate;
 }
 body main .wrap .s1 .scrolldown {
   position: absolute;
@@ -121,5 +122,13 @@ body main .wrap .s4 {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes title {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
   }
 }/*# sourceMappingURL=portfolio.css.map */
