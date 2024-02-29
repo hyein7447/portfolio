@@ -1,0 +1,132 @@
+@import 'common';
+body {
+    background-color: $bg;
+    header {
+        .circle {
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            position: fixed;
+            border: 1px solid #333;
+            transform: translate(-50%,-50%);
+            pointer-events: none;
+            transition: 0.1s;
+        }
+        .nav {    
+            @include flex-row-btw-ct;
+            margin: 40px 40px;
+            .left {
+                position: fixed; 
+                z-index: 100; 
+                left: 40px;
+                a {
+                    img {}
+                }
+                .menu_open {
+                    @include flex-col-ct-ct;
+                    display: none;
+                    a {
+                        color: #333;
+                        margin-top: 30px; 
+                        font-size: 1.5rem;
+                        &:first-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .right {
+                position: fixed; 
+                z-index: 200; 
+                right: 40px;
+                a {
+                    color: #333; 
+                    margin-right: 30px;
+                    font-size: 1.5rem; 
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: $bg;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+
+                    &:hover {
+                        width: 100%; 
+                        left: 0;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        margin: 300px auto;
+        .intro {
+            background: $bg; 
+            height: 100vh;
+            h1 {
+                color: #333; 
+                font-size: 5rem; 
+                text-align: center;
+            }
+        }
+        .name {
+            display: flex; 
+            flex-flow: column nowrap; 
+            align-items: flex-end;
+            p {
+                color: #333; 
+                font-size: 2.5rem; 
+                position: relative; 
+                bottom: -300px;
+                left: -50px;
+            }
+        }
+        .side_btn {
+            display: flex; 
+            flex-flow: column nowrap;
+            position: fixed; 
+            z-index: 300; 
+            right: 1.5%; 
+            bottom: 45%;
+            button {
+                background: #333;
+                border-radius: 50%; 
+                width: 12px; 
+                height: 12px;
+                display: block; 
+                margin-bottom: 18px;
+            }
+
+            #page1 {}
+            #page2 {}
+            #page3 {}
+            #page4 {}
+        }
+        .about {
+            height: 100vh; 
+            background: $bg;
+            h1 {
+                color: #000; 
+                font-size: 5rem;
+                position: absolute;
+            }
+            p {
+                color: #000;
+                em {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
