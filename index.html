@@ -9,6 +9,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/jquery.fullPage.css">
     <!-- font_family -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <!--플러그인 필수 css cdn 연결-->
@@ -17,54 +18,43 @@
 
 </head>
 <body>
+
     <header>
-        <div class="circle"></div>
         <div class="nav">
-            <div class="left">
-                <a href="#" class="all_menu"><img src="./images/menu_b.png" alt="전체메뉴"></a>
-                <div class="menu_open">
-                    <a href="#">ABOUT</a>
-                    <a href="#">SKILL</a>
-                    <a href="#">PROJECT</a>
-                    <a href="#">CONTACT</a>
-                </div>
-            </div>
-            <div class="right">
-                <a href="#">ABOUT</a>
-                <a href="#">SKILL</a>
-                <a href="#">PROJECT</a>
-                <a href="#">CONTACT</a>
+            <div class="menu_open">
+                <a href="#" class="a">HOME</a>
+                <a href="#" class="b">ABOUT</a>
+                <a href="#" class="c">SKILL</a>
+                <a href="#" class="d">PROJECT</a>
+                <a href="#" class="e">CONTACT</a>
             </div>
         </div>
     </header>
     <main>
-        <section class="intro">
-            <h1>PORTFOLIO</h1>
-            <div class="name">
-                <p>KIMHYEIN</p>
-                <p>FRONTEND DEVELOPER</p>
+        <div class="wrap">
+            <div class="section s1">
+                <h1>portfolio</h1>
+                <div class="scrolldown intro_ani ani_on">
+                    <div class="mouse_outline"></div>
+                    <div class="mouse_wheel"></div>
+                </div>
             </div>
-            <div class="side_btn">
-                <button type="button" id="page1"></button>
-                <button type="button" id="page2"></button>
-                <button type="button" id="page3"></button>
-                <button type="button" id="page4"></button>
+            <div class="section s2">
+                <div class="bg">
+                    <h2>ABOUT ME</h2>
+                </div>
             </div>
-        </section>
-        <section class="about">
-            <h1>ABOUT ME !</h1>
-            <p>문제를 해결해 나가는것에 <em>성취감</em>을 느끼고
-                <em>뛰어난 눈썰미</em>로 미세한 차이도<em>Catch</em>할 수 있는
-                안목을 지녔습니다.</p>
-            <p><em>Support</em>하는것을 좋아하는<em>ISFJ</em>로써
-                <em>소통</em>하는 팀분위기를 만들어갑니다.</p>
-        </section>
+            <div class="section s3"></div>
+            <div class="section s4"></div>
+        </div>
     </main>
-    <script src="./scripte/portfolio.js"></script>
+    <div class="circle"></div>
     <!-- FullPage 필수 CDN 연결 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripte/jquery.fullPage.js"></script>
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripte/portfolio.js"></script>
 </body>
 </html>

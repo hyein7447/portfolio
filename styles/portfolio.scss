@@ -1,132 +1,124 @@
 @import 'common';
 body {
     background-color: $bg;
+    .circle {
+        width: 50px; height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        border: 1px solid #333;
+        transform: translate(-50%,-50%);
+        pointer-events: none;
+        transition: 0.1s;
+    }
     header {
-        .circle {
-            width: 50px; height: 50px;
-            border-radius: 50%;
-            position: fixed;
-            border: 1px solid #333;
-            transform: translate(-50%,-50%);
-            pointer-events: none;
-            transition: 0.1s;
-        }
         .nav {    
             @include flex-row-btw-ct;
-            margin: 40px 40px;
-            .left {
-                position: fixed; 
-                z-index: 100; 
-                left: 40px;
+            // margin: 40px 40px;
+            position: fixed; 
+            left: 0; 
+            top: 0; 
+            z-index: 999;
+            width: 100%;
+            background-color: rgba($color: #ffffff, $alpha: 0.5);
+            .menu_open {
+                @include flex-row-btw-ct;
                 a {
-                    img {}
-                }
-                .menu_open {
-                    @include flex-col-ct-ct;
-                    display: none;
-                    a {
-                        color: #333;
-                        margin-top: 30px; 
-                        font-size: 1.5rem;
-                        &:first-child {
-                            margin: 0;
-                        }
-                    }
-                }
-            }
-            .right {
-                position: fixed; 
-                z-index: 200; 
-                right: 40px;
-                a {
-                    color: #333; 
-                    margin-right: 30px;
-                    font-size: 1.5rem; 
-                    position: relative;
-
-                    &::after {
-                        content: "";
-                        background: none repeat scroll 0 0 transparent;
-                        bottom: 0;
-                        display: block;
-                        height: 2px;
-                        left: 50%;
-                        position: absolute;
-                        background: $bg;
-                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                        width: 0;
-                    }
-
-                    &:hover {
-                        width: 100%; 
-                        left: 0;
-                    }
-
-                    &:last-child {
-                        margin: 0;
-                    }
+                    color: #333;
+                    margin-top: 30px; 
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin: 20px 40px;
+                    &:first-child {}
                 }
             }
         }
     }
     main {
-        margin: 300px auto;
-        .intro {
-            background: $bg; 
-            height: 100vh;
-            h1 {
-                color: #333; 
-                font-size: 5rem; 
-                text-align: center;
+        .wrap {
+            overflow-x: hidden;
+            .section {
+                height: 100vh;
+                width: 100vw;
             }
-        }
-        .name {
-            display: flex; 
-            flex-flow: column nowrap; 
-            align-items: flex-end;
-            p {
-                color: #333; 
-                font-size: 2.5rem; 
-                position: relative; 
-                bottom: -300px;
-                left: -50px;
-            }
-        }
-        .side_btn {
-            display: flex; 
-            flex-flow: column nowrap;
-            position: fixed; 
-            z-index: 300; 
-            right: 1.5%; 
-            bottom: 45%;
-            button {
-                background: #333;
-                border-radius: 50%; 
-                width: 12px; 
-                height: 12px;
-                display: block; 
-                margin-bottom: 18px;
-            }
-
-            #page1 {}
-            #page2 {}
-            #page3 {}
-            #page4 {}
-        }
-        .about {
-            height: 100vh; 
-            background: $bg;
-            h1 {
-                color: #000; 
-                font-size: 5rem;
-                position: absolute;
-            }
-            p {
-                color: #000;
-                em {
-                    color: #000;
+            .s1 {
+                background: $bg;
+                position: relative;
+                h1 {
+                    color: #333;
+                    font-size: 5rem;
+                    display: flex;
+                    justify-content: center;
                 }
+                .scrolldown {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    // background: rgba($color: #000000, $alpha: 0.3);
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 48px;
+                    animation: fadeIn 3s both;
+                    .mouse_outline {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 12px;
+                        border: 3px solid #333;
+                    }
+                    .mouse_wheel {
+                        width: 4px;
+                        height: 12px;
+                        border-radius: 2px;
+                        background: #333;
+                        position: absolute;
+                        top: 10px;
+                        left: calc(50% - 2px);
+                        animation: slideUp50 1s linear reverse infinite;
+                    }
+                }
+            }
+            .s2 {
+                background-color: #fff;
+                .bg {
+                    height: 600px;
+                    h2 {
+                        font-size: 2rem;
+                        height: 50px;
+                        text-align: center;
+                        position: relative;
+                        &::before {
+                            content: '01';
+                            font-size: 7rem;
+                            font-weight: 700;
+                            color: rgba($color: $bg, $alpha: 0.8);
+                            position: absolute;
+                            left: 75px;
+                            top: -25px;
+                        }
+                    }
+                }
+            }
+            .s3 {
+                background-color: $bg;
+            }
+            .s4 {
+                background-color: #fff;
             }
         }
     }
 }
+
+
+
+// 애니메이션
+
+@keyframes slideUp50 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-5px);}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+// JS 호출용 classList

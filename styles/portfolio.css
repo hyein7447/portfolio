@@ -1,7 +1,7 @@
 body {
   background-color: #ede8e4;
 }
-body header .circle {
+body .circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -16,110 +16,110 @@ body header .nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 40px;
-}
-body header .nav .left {
   position: fixed;
-  z-index: 100;
-  left: 40px;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-body header .nav .left .menu_open {
+body header .nav .menu_open {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
-  display: none;
 }
-body header .nav .left .menu_open a {
+body header .nav .menu_open a {
   color: #333;
   margin-top: 30px;
   font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 40px;
 }
-body header .nav .left .menu_open a:first-child {
-  margin: 0;
+body main .wrap {
+  overflow-x: hidden;
 }
-body header .nav .right {
-  position: fixed;
-  z-index: 200;
-  right: 40px;
+body main .wrap .section {
+  height: 100vh;
+  width: 100vw;
 }
-body header .nav .right a {
-  color: #333;
-  margin-right: 30px;
-  font-size: 1.5rem;
+body main .wrap .s1 {
+  background: #ede8e4;
   position: relative;
 }
-body header .nav .right a::after {
-  content: "";
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  display: block;
-  height: 2px;
+body main .wrap .s1 h1 {
+  color: #333;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+body main .wrap .s1 .scrolldown {
+  position: absolute;
+  bottom: 30px;
   left: 50%;
-  position: absolute;
-  background: #ede8e4;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-body header .nav .right a:hover {
-  width: 100%;
-  left: 0;
-}
-body header .nav .right a:last-child {
-  margin: 0;
-}
-body main {
-  margin: 300px auto;
-}
-body main .intro {
-  background: #ede8e4;
-  height: 100vh;
-}
-body main .intro h1 {
-  color: #333;
-  font-size: 5rem;
-  text-align: center;
-}
-body main .name {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-end;
-}
-body main .name p {
-  color: #333;
-  font-size: 2.5rem;
-  position: relative;
-  bottom: -300px;
-  left: -50px;
-}
-body main .side_btn {
-  display: flex;
-  flex-flow: column nowrap;
-  position: fixed;
-  z-index: 300;
-  right: 1.5%;
-  bottom: 45%;
-}
-body main .side_btn button {
-  background: #333;
+  transform: translateX(-50%);
   border-radius: 50%;
-  width: 12px;
+  width: 30px;
+  height: 48px;
+  animation: fadeIn 3s both;
+}
+body main .wrap .s1 .scrolldown .mouse_outline {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 3px solid #333;
+}
+body main .wrap .s1 .scrolldown .mouse_wheel {
+  width: 4px;
   height: 12px;
-  display: block;
-  margin-bottom: 18px;
-}
-body main .about {
-  height: 100vh;
-  background: #ede8e4;
-}
-body main .about h1 {
-  color: #000;
-  font-size: 5rem;
+  border-radius: 2px;
+  background: #333;
   position: absolute;
+  top: 10px;
+  left: calc(50% - 2px);
+  animation: slideUp50 1s linear reverse infinite;
 }
-body main .about p {
-  color: #000;
+body main .wrap .s2 {
+  background-color: #fff;
 }
-body main .about p em {
-  color: #000;
+body main .wrap .s2 .bg {
+  height: 600px;
+}
+body main .wrap .s2 .bg h2 {
+  font-size: 2rem;
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+body main .wrap .s2 .bg h2::before {
+  content: "01";
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(237, 232, 228, 0.8);
+  position: absolute;
+  left: 75px;
+  top: -25px;
+}
+body main .wrap .s3 {
+  background-color: #ede8e4;
+}
+body main .wrap .s4 {
+  background-color: #fff;
+}
+
+@keyframes slideUp50 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
