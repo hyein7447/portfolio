@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles----------------------------*/
+.intro .title-logo {
+  font-size: 60px;
+  color: #126BB0;
+  margin: 0;
+  font-weight: 800;
+}
+
+.intro p {
+  color: #999999;
+}
+
+.section {
+  text-align: center;
+}
+
+#section0 {
+  background: -webkit-linear-gradient(-45deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background-size: cover;
+}
+
+#section1 {
+  background: -webkit-linear-gradient(45deg, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  background-size: cover;
+}
+
+#section2 {
+  background: -webkit-linear-gradient(-45deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background-size: cover;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #126BB0;
+}
+
+#fp-nav .fp-tooltip {
+  font-family: Arial, sans-serif !important;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.parallax {
+  position: relative !important;
+  z-index: 1 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

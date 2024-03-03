@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2024년 프론트엔드 신입 김혜인 포트폴리오입니다">
+    <meta name="keywords" content="프론트엔드,frontend,html,css,javascript">
+    <title>포트폴리오</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/jquery.fullPage.css">
+    <!-- font_family -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css 애니메이션 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="menu_open">
+                <a href="#" class="a">HOME</a>
+                <a href="#" class="b">ABOUT</a>
+                <a href="#" class="c">SKILL</a>
+                <a href="#" class="d">PROJECT</a>
+                <a href="#" class="e">CONTACT</a>
+            </div>
+            <div class="title_img">
+                <img src="./images/hyein_portfolio.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="section s1">
+                <div class="title">
+                    <img class="img1" src="./images/title_text.png" alt="">
+                    <img class="img2" src="./images/title_shadow.png" alt="">
+                </div>
+                <div class="scrolldown intro_ani ani_on">
+                    <div class="mouse_outline"></div>
+                    <div class="mouse_wheel"></div>
+                </div>
+            </div>
+            <div class="section s2">
+                <div class="bg">
+                    <h2>ABOUT ME</h2>
+                    <div class="container">
+                        <p class="typing">
+                            <em>Support</em> 하는것을 좋아하는 <em>ISFJ</em>로써<br>
+                            소통하는 팀분위기를 만들어갑니다.
+                        </p>
+                        <div class="desc">
+                            <div class="education">
+                                <span class="title">Education</span>
+                                <span>그린컴퓨터 아카데미 수료</span>
+                                <span>생성형 AI를 활용한 채팅기반 프론트엔드 개발자과정</span>
+                                <span> 2023. 10. 31 - 2024. 03. 15</span>
+                            </div>
+                            <div class="program">
+                                <span class="title">Program</span>
+                                <span class="name">
+                                    <span class="col1">
+                                        <span>HTML</span>
+                                        <span>CSS / SCSS</span>
+                                        <span>Java Script</span>
+                                        <span>J-Query</span>
+                                    </span>
+                                    <span class="col2">
+                                        <span>PhotoShop</span>
+                                        <span>Illustrator</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section s3">
+                <div class="bg">
+                    <h2>SKILL</h2>
+                    <div class="container">
+                        <div class="top">
+                            <div class="front_skill">
+                                <span>#FRONT-END SKILL</span>
+                                <span>{ 아이콘에 마우스를 올려주세요! }</span>
+                            </div>
+                            <div class="skill_contents">
+                                <div class="item item1">
+                                    <div class="skill skill1">
+                                        <img src="./images/icon/html_2.png" alt="html">
+                                    </div>
+                                    <div class="desc desc1">
+                                        <p class="name">HTML5</p>
+                                        <p class="desc_txt">
+                                            시멘틱 마크업, 브라우저 렌더링 등 전반적인 프로세스에 관하여 잘 알고있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item2">
+                                    <div class="skill skill2">
+                                        <img src="./images/icon/css2.png" alt="css">
+                                    </div>
+                                    <div class="desc desc2">
+                                        <p class="name">CSS3</p>
+                                        <p class="desc_txt">
+                                            CSS가 가지고있는 속성과 특성을 잘 이해하고 배치하여 보기 좋은 디자인을 구현할줄 압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item3">
+                                    <div class="skill skill3">
+                                        <img src="./images/icon/sass1.png" alt="scss">
+                                    </div>
+                                    <div class="desc desc3">
+                                        <p class="name">SASS</p>
+                                        <p class="desc_txt">
+                                            SCSS가 가지고있는 속성과 특성을 잘 이해하고 선택자를 보기쉽게 관리합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item4">
+                                    <div class="skill skill4">
+                                        <img src="./images/icon/js1.jpg" alt="js">
+                                    </div>
+                                    <div class="desc desc4">
+                                        <p class="name">Javascript</p>
+                                        <p class="desc_txt">
+                                            바닐라 자바스크립트의 기본 개념이 탄탄하고 동적기능과함께 디자인 요소 적용까지 잘 이해하고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item5">
+                                    <div class="skill skill5">
+                                        <img src="./images/icon/react.svg" alt="react">
+                                    </div>
+                                    <div class="desc desc5">
+                                        <p class="name">React</p>
+                                        <p class="desc_txt">
+                                            컴포넌트의 개념과 PROPS를 이용하여 페이지를 구현해본 경험이 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item6">
+                                    <div class="skill skill6">
+                                        <img src="./images/icon/jq2.png" alt="jquery">
+                                    </div>
+                                    <div class="desc desc6">
+                                        <p class="name">JQuery</p>
+                                        <p class="desc_txt">
+                                            작업시 활용해본 경험이 있으며 효율적인 DOM조작이 가능합니다
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item7">
+                                    <div class="skill skill7">
+                                        <img src="./images/icon/php.png" alt="php">
+                                    </div>
+                                    <div class="desc desc7">
+                                        <p class="name">PHP</p>
+                                        <p class="desc_txt">
+                                            common 파일을 PHP로 변환하여 컴포넌트한 경험이 있으며 기본개념에 대해 알고있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="using_tool">
+                                <span>#USING TOOL</span>
+                            </div>
+                            <div class="skill_contents">
+                                <div class="item item1">
+                                    <div class="skill skill1">
+                                        <img src="./images/icon/gpt2.webp" alt="gpt">
+                                    </div>
+                                    <div class="desc desc1">
+                                        <p class="name">GPT</p>
+                                        <p class="desc_txt">
+                                            API개념을 이해하고 챗GPT를 사용할줄 알고 클라이언트와 연결하여 사용자에게 제공할 줄 압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item2">
+                                    <div class="skill skill2">
+                                        <img src="./images/icon/illustrator.png" alt="illustrator">
+                                    </div>
+                                    <div class="desc desc2">
+                                        <p class="name">Illustrator</p>
+                                        <p class="desc_txt">
+                                            레이아웃 구성을 이해하고 다양한 skill로 인쇄물 작업에 적합한 결과를 만들줄압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item3">
+                                    <div class="skill skill3">
+                                        <img src="./images/icon/ph1.png" alt="ph">
+                                    </div>
+                                    <div class="desc desc3">
+                                        <p class="name">Photoshop</p>
+                                        <p class="desc_txt">
+                                            도구사용과 개념을 잘 이해하고 있으며 편집과 다양한 효과로 디자인을 할줄압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item4">
+                                    <div class="skill skill4">
+                                        <img src="./images/icon/figma2.png" alt="figma">
+                                    </div>
+                                    <div class="desc desc4">
+                                        <p class="name">Figma</p>
+                                        <p class="desc_txt">
+                                            프로젝트에 협업으로 사용한 경험이 있으며, AUTO RAYOUT의 개념과 기능을 활용할 줄 압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item5">
+                                    <div class="skill skill5">
+                                        <img src="./images/icon/notion1.png" alt="notion">
+                                    </div>
+                                    <div class="desc desc5">
+                                        <p class="name">Notion</p>
+                                        <p class="desc_txt">
+                                            업무에 관련된 스케줄 관리와 데이터를 저장하고 공유 할 줄압니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item6">
+                                    <div class="skill skill6">
+                                        <img src="./images/icon/github1.png" alt="git">
+                                    </div>
+                                    <div class="desc desc6">
+                                        <p class="name">Git</p>
+                                        <p class="desc_txt">
+                                            git Hub의 기본적인 구조를 이해하고 팀 작업시 원활한 소통이 가능합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section s4">
+                <div class="bg">
+                    <h2>PROJECT</h2>
+                    <div class="container">
+                        <div class="left">
+                            <img src="./images/kurly_mokup.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="title">
+                                <img src="./images/teamproject.png" alt="">
+                                <p class="site_name">MARKET KURLY</p>
+                            </div>
+                            <div class="content">
+                                <div class="title">
+                                    <p>TYPE</p>
+                                    <p>PAGE</p>
+                                    <p>TOOL</p>
+                                </div>
+                                <div class="desc">
+                                    <p>Responsive Web</p>
+                                    <p>index + sub 19</p>
+                                    <p>Gnuboard, KaKaomap Api, Chat GPT Api, Swiper</p>
+                                </div>
+                            </div>
+                            <div class="link">
+                                <a href="https://www.figma.com/proto/ck1uRgD4GhsVVJlOv7Li3t/%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%AC_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8PPT?page-id=0%3A1&type=design&node-id=94-2&viewport=676%2C-242%2C0.11&t=ZgDb0p9fX9xfP3uH-1&scaling=contain&mode=design" target="_blank">Project PPT</a>
+                                <a href="https://yunaweb.pe.kr/marketkurly_frontend24/" target="_blank">Web Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section s5">
+                <div class="bg">
+                    <h2>PROJECT</h2>
+                    <div class="content">
+                        <div class="left">
+                            <img src="./images/project2.png" alt="">
+                        </div>
+                        <div class="right">
+                            <p class="title">LG전자 <span>{ personal project }</span></p>
+                            <div class="desc">
+                                <div class="col1">
+                                    <p>TYPE</p>
+                                    <p>PAGE</p>
+                                    <p>TOOL</p>
+                                </div>
+                                <div class="col2">
+                                    <p>Desk Top Web</p>
+                                    <p>index + sub * 3</p>
+                                    <p>HTML5, CSS, JS, Swiper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color_bg"></div>
+                </div>
+                <a href="https://lgclonedcoding.netlify.app/" target="_blank" class="link"></a>
+            </div>
+            <div class="section s6">
+                <div class="bg">
+                    <h2>CONTACT</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="circle"></div>
+    <!-- FullPage 필수 CDN 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripte/jquery.fullPage.js"></script>
+    <!--Swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripte/portfolio.js"></script>
+</body>
+</html>
