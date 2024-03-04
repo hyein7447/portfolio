@@ -37,8 +37,11 @@ body header .nav .menu_open a {
   font-weight: 700;
   margin: 20px 40px;
 }
+body header .nav .title_img {
+  padding-right: 30px;
+}
 body header .nav .title_img img {
-  width: 200px;
+  width: 180px;
 }
 body main .wrap .s1 {
   background: #F9F5EA;
@@ -81,8 +84,7 @@ body main .wrap .s2 {
   background-color: #fff;
 }
 body main .wrap .s2 .bg {
-  height: 600px;
-  background-color: rgba(249, 245, 234, 0.5);
+  height: 100%;
 }
 body main .wrap .s2 .bg h2 {
   font-size: 2.7rem;
@@ -92,6 +94,7 @@ body main .wrap .s2 .bg h2 {
   letter-spacing: -1.5px;
   font-weight: 500;
   margin-left: 80px;
+  margin-top: 200px;
 }
 body main .wrap .s2 .bg h2::before {
   content: "01";
@@ -103,42 +106,80 @@ body main .wrap .s2 .bg h2::before {
   top: -20px;
 }
 body main .wrap .s2 .bg .container {
-  margin: 50px 180px 0;
+  margin-top: 50px;
   display: flex;
-  justify-content: flex-start;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
 }
-body main .wrap .s2 .bg .container .typing {
-  line-height: 52px;
-  font-size: 2.125rem;
-  width: 60%;
+body main .wrap .s2 .bg .container p {
+  line-height: 36px;
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 50px;
+  position: relative;
 }
-body main .wrap .s2 .bg .container .typing em {
-  font-size: 2.5rem;
+body main .wrap .s2 .bg .container p::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/bracket.png) no-repeat center;
+  background-size: 42px 58px;
+  width: 20px;
+  height: 58px;
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+body main .wrap .s2 .bg .container p::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/bracket_02.png) no-repeat center;
+  background-size: 42px 58px;
+  width: 20px;
+  height: 58px;
+  position: absolute;
+  top: -1px;
+  right: -26px;
+}
+body main .wrap .s2 .bg .container p em {
+  font-size: 2.25rem;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   display: inline-block;
 }
-body main .wrap .s2 .bg .container .typing em:hover {
+body main .wrap .s2 .bg .container p em:hover {
   animation: swing 1s ease;
   animation-iteration-count: 1;
   color: #FBAE17;
 }
-body main .wrap .s2 .bg .container .desc .education {
+body main .wrap .s2 .bg .container .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body main .wrap .s2 .bg .container .content .left {
+  margin-right: 80px;
+}
+body main .wrap .s2 .bg .container .content .left img {
+  width: 350px;
+  height: 400px;
+}
+body main .wrap .s2 .bg .container .content .desc .education {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-body main .wrap .s2 .bg .container .desc .education .title {
+body main .wrap .s2 .bg .container .content .desc .education .title {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(2) {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(2) {
   font-size: 1.25rem;
   margin-bottom: 15px;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(2)::before {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(2)::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -149,11 +190,11 @@ body main .wrap .s2 .bg .container .desc .education :nth-child(2)::before {
   position: relative;
   top: -4px;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(3) {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(3) {
   font-size: 1.125rem;
   margin-bottom: 10px;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(3)::before {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(3)::before {
   content: "";
   width: 6px;
   height: 1px;
@@ -164,10 +205,10 @@ body main .wrap .s2 .bg .container .desc .education :nth-child(3)::before {
   position: relative;
   top: -5px;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(4) {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(4) {
   font-size: 1.125rem;
 }
-body main .wrap .s2 .bg .container .desc .education :nth-child(4)::before {
+body main .wrap .s2 .bg .container .content .desc .education :nth-child(4)::before {
   content: "";
   width: 6px;
   height: 1px;
@@ -178,29 +219,27 @@ body main .wrap .s2 .bg .container .desc .education :nth-child(4)::before {
   position: relative;
   top: -5px;
 }
-body main .wrap .s2 .bg .container .desc .program {
+body main .wrap .s2 .bg .container .content .desc .program {
   margin-top: 50px;
 }
-body main .wrap .s2 .bg .container .desc .program .title {
+body main .wrap .s2 .bg .container .content .desc .program .title {
   font-size: 2rem;
   display: block;
   margin-bottom: 20px;
 }
-body main .wrap .s2 .bg .container .desc .program .name {
+body main .wrap .s2 .bg .container .content .desc .program .name {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col1 {
+body main .wrap .s2 .bg .container .content .desc .program .name .col1 {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
+  margin-right: 100px;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col1 span {
+body main .wrap .s2 .bg .container .content .desc .program .name .col1 span {
   padding-bottom: 10px;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col1 span::before {
+body main .wrap .s2 .bg .container .content .desc .program .name .col1 span::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -211,15 +250,15 @@ body main .wrap .s2 .bg .container .desc .program .name .col1 span::before {
   position: relative;
   top: -2px;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col2 {
+body main .wrap .s2 .bg .container .content .desc .program .name .col2 {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col2 span {
+body main .wrap .s2 .bg .container .content .desc .program .name .col2 span {
   padding-bottom: 10px;
 }
-body main .wrap .s2 .bg .container .desc .program .name .col2 span::before {
+body main .wrap .s2 .bg .container .content .desc .program .name .col2 span::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -261,6 +300,7 @@ body main .wrap .s3 .bg .container {
   flex-flow: column;
   align-items: flex-start;
   justify-content: center;
+  padding-left: 200px;
 }
 body main .wrap .s3 .bg .container .top {
   display: flex;
@@ -291,13 +331,12 @@ body main .wrap .s3 .bg .container .top .skill_contents .item {
   margin-right: 40px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: 300ms ease;
+  transition: 0.5s ease;
 }
 body main .wrap .s3 .bg .container .top .skill_contents .item:hover {
-  padding-left: 300px;
-}
-body main .wrap .s3 .bg .container .top .skill_contents .item:hover .desc {
-  opacity: 1;
+  padding-left: 320px;
+  height: 120px;
+  border-radius: 10px;
 }
 body main .wrap .s3 .bg .container .top .skill_contents .item .skill {
   background-color: #E8DED6;
@@ -315,23 +354,61 @@ body main .wrap .s3 .bg .container .top .skill_contents .item .skill img {
 body main .wrap .s3 .bg .container .top .skill_contents .item .desc {
   background-color: #E8DED6;
   position: absolute;
-  width: 200px;
+  width: 210px;
   height: 100%;
   left: 100px;
   top: 0;
-  opacity: 0;
+  text-align: start;
+  padding-top: 15px;
+  padding-right: 10px;
 }
 body main .wrap .s3 .bg .container .top .skill_contents .item .desc .name {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
 body main .wrap .s3 .bg .container .top .skill_contents .item .desc .desc_txt {
   font-size: 0.875rem;
+  line-height: 1.5;
 }
-body main .wrap .s3 .bg .container .top .skill_contents .item7 img {
+body main .wrap .s3 .bg .container .top .skill_contents .item1 {
+  background: #E8DED6 url(../images/icon/html_2.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item2 {
+  background: #E8DED6 url(../images/icon/css2.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item3 {
+  background: #E8DED6 url(../images/icon/sass1.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item4 {
+  background: #E8DED6 url(../images/icon/js1.jpg) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item5 {
+  background: #E8DED6 url(../images/icon/react.svg) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item6 {
+  background: #E8DED6 url(../images/icon/jq2.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item7 {
+  background: #E8DED6 url(../images/icon/php.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .top .skill_contents .item7 .skill7 img {
   width: 60%;
-  height: 40%;
+  height: 30%;
 }
 body main .wrap .s3 .bg .container .bottom {
   display: flex;
@@ -349,9 +426,17 @@ body main .wrap .s3 .bg .container .bottom .skill_contents {
   display: flex;
 }
 body main .wrap .s3 .bg .container .bottom .skill_contents .item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
   margin-top: 40px;
   margin-right: 40px;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease;
 }
 body main .wrap .s3 .bg .container .bottom .skill_contents .item .skill {
   background-color: #E8DED6;
@@ -366,8 +451,60 @@ body main .wrap .s3 .bg .container .bottom .skill_contents .item .skill img {
   width: 50%;
   height: 50%;
 }
+body main .wrap .s3 .bg .container .bottom .skill_contents .item:hover {
+  padding-left: 320px;
+  height: 120px;
+  border-radius: 10px;
+}
 body main .wrap .s3 .bg .container .bottom .skill_contents .item .desc {
-  display: none;
+  background-color: #E8DED6;
+  position: absolute;
+  width: 210px;
+  height: 100%;
+  left: 100px;
+  top: 0;
+  text-align: start;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item .desc .name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item .desc .desc_txt {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item1 {
+  background: #E8DED6 url(../images/icon/gpt2.webp) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item2 {
+  background: #E8DED6 url(../images/icon/illustrator.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item3 {
+  background: #E8DED6 url(../images/icon/ph1.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item4 {
+  background: #E8DED6 url(../images/icon/figma2.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item5 {
+  background: #E8DED6 url(../images/icon/notion1.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
+}
+body main .wrap .s3 .bg .container .bottom .skill_contents .item6 {
+  background: #E8DED6 url(../images/icon/github1.png) no-repeat 20px center;
+  background-size: 50px;
+  text-align: center;
 }
 body main .wrap .s4 {
   background-color: #fff;
@@ -409,6 +546,8 @@ body main .wrap .s4 .bg .container .left img {
   width: 85%;
 }
 body main .wrap .s4 .bg .container .right {
+  opacity: 0;
+  position: relative;
   margin-left: 50px;
 }
 body main .wrap .s4 .bg .container .right .title {
@@ -513,6 +652,7 @@ body main .wrap .s5 .bg .content .right .title {
   padding-bottom: 20px;
   margin-bottom: 30px;
   position: relative;
+  font-weight: 600;
 }
 body main .wrap .s5 .bg .content .right .title::after {
   width: 500px;
@@ -554,15 +694,143 @@ body main .wrap .s5 .bg .color_bg {
   left: 0;
 }
 body main .wrap .s5 .link {
-  background: url(../images/link_text_03.png) repeat-x center;
+  background: url(../images/link_text_04.png) repeat-x center;
   background-size: 70%;
   width: 100%;
   height: 60px;
   position: absolute;
   z-index: 30;
   bottom: 0;
-  animation: loop 10s infinite linear;
+  animation: loop 50s infinite linear;
   margin-bottom: 40px;
+}
+body main .wrap .s6 .bg h2 {
+  font-size: 2.7rem;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 95px;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+  margin-left: 80px;
+  height: 150px;
+  margin-top: 100px;
+}
+body main .wrap .s6 .bg h2::before {
+  content: "04";
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+body main .wrap .s6 .bg .content {
+  position: relative;
+}
+body main .wrap .s6 .bg .content p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+body main .wrap .s6 .bg .content .arrow img {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 530px;
+  animation: swingY 1s ease infinite;
+}
+body main .wrap .s6 .bg .content .type {
+  display: flex;
+  justify-content: center;
+}
+body main .wrap .s6 .bg .content .type .qr {
+  background-color: #E8DED6;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin-right: 50px;
+}
+body main .wrap .s6 .bg .content .type .qr span {
+  font-size: 1.75rem;
+  display: block;
+  padding-top: 20px;
+}
+body main .wrap .s6 .bg .content .type .qr img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body main .wrap .s6 .bg .content .type .email form {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #E8DED6;
+  width: 500px;
+}
+body main .wrap .s6 .bg .content .type .email form .my_email {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+body main .wrap .s6 .bg .content .type .email form #user_name {
+  border: 1px solid #333;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgba(249, 245, 234, 0.5);
+}
+body main .wrap .s6 .bg .content .type .email form #user_name::-moz-placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form #user_name::placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form #user_email {
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  display: block;
+  padding: 5px 10px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgba(249, 245, 234, 0.5);
+}
+body main .wrap .s6 .bg .content .type .email form #user_email::-moz-placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form #user_email::placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form textarea {
+  width: 400px;
+  height: 155px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgba(249, 245, 234, 0.5);
+}
+body main .wrap .s6 .bg .content .type .email form textarea::-moz-placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form textarea::placeholder {
+  font-size: 0.875rem;
+}
+body main .wrap .s6 .bg .content .type .email form #submit_btn {
+  margin-top: 20px;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+body main .wrap .s6 .bg .content .type .email form #submit_btn:hover {
+  border-radius: 50%;
+}
+body main .wrap .s6 .bg .content .copy {
+  font-size: 0.875rem;
+  margin: 50px 0;
 }
 
 @keyframes slideUp50 {
@@ -594,7 +862,7 @@ body main .wrap .s5 .link {
     background-position-x: 0;
   }
   100% {
-    background-position-x: 1000px;
+    background-position-x: 5000px;
   }
 }
 @keyframes swing {
@@ -617,8 +885,42 @@ body main .wrap .s5 .link {
     transform: translateX(0);
   }
 }
+@keyframes width {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(100%);
+  }
+}
+@keyframes swingY {
+  15% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  65% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .hover {
   padding-left: 250px;
   height: 120px;
   transition: 300ms ease;
+}
+
+.scale {
+  animation: width 0.5s linear;
 }/*# sourceMappingURL=portfolio.css.map */

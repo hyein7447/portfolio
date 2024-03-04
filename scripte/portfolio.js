@@ -7,19 +7,20 @@ window.addEventListener('mousemove',(e)=>{
 
 $ ('.wrap').fullpage({
     scrollBar:true, // 스크롤바 표시하기 (기본값false)
-    scrollingSpeed:1000, //스크롤바 전환속도 (기본값 1000)
-
-/*     menu:'menu_open', //상단 메뉴 클릭 시 해당 메뉴 위치로 이동
-    anchors:['a','b','c','d'], //메뉴a #이름과 일치시킨 이름작성
-    // 현재 anchors 명칭은 a,b,c,d
-    afterLoad:function(anchor, index){
-        console.log(anchor, index)
-        if(anchor == 'b'){// 앵커의 위치가 b와 같으면
-            $('.s2').get(0).classList.add('bg')
-        }else{
-            $('.s2').get(0).classList.remove('bg')
+    scrollingSpeed:600, //스크롤바 전환속도 (기본값 1000)
+    navigation:true, //우측 내비게이션 표시하기 (기본값 false)
+    anchors: ['s1','s2','s3','s4','s5','s6'],
+    afterLoad:function(anchor,index){
+        if(anchor == 's4'){
+            $('.s4 .right').animate({
+                opacity:1,
+                top:50,
+            },1500)
         }
-    } */
+        if(anchor == 's5'){
+            $('.s5 .bg .color_bg').get(0).classList.add('scale')
+        }
+    }
 })
 
 const menu_open_a = document.querySelectorAll('.menu_open a')
@@ -31,7 +32,7 @@ menu_open_a.forEach((t,i)=>{
     })
 })
 
-/* const content = "Support 하는것을 좋아하는 ISFJ로써 \n 소통하는 팀분위기를 만들어갑니다.";
+const content = "성장해 나가는 프론트엔드 개발자 김혜인의 포트폴리오였습니다.\n 끝까지 봐주셔서 감사합니다 :)";
 const text = document.querySelector(".typing");
 text.textContent = "";
 let txtIdx = 0;
@@ -45,33 +46,14 @@ function typing(){
         setTimeout(typing, 80)
     }
 }
-typing(); */
+typing();
+
+const s6 = document.querySelector('.s6')
+console.log(s6.offsetTop)
 
 
-// 스킬 아이콘 효과
-
-const item = document.querySelectorAll('.s3 .container .item')
-const desc = document.querySelectorAll('.item .desc')
-console.log(item,desc)
-
-
-
-/*     t.addEventListener('click',()=>{
-        desc[i].style.display = 'block'
-    }) */
-
-
-/* const item_all = document.querySelectorAll('.s3 .item')
-const desc_all = document.querySelectorAll('.s3 .desc')
-console.log (item_all, desc_all)
-
-const hide = ()=>{for(let h of desc_all){h.style.display='none'}}
-hide()
-
-item_all.forEach((t,i)=> {
-    t.addEventListener('mouseover',()=>{
-        hide()
-        desc_all[i].style.display = 'block'
-        item_all[i].classList.add('hover')
-    })
-}) */
+window.addEventListener('scroll',()=>{
+    if(s6.offsetTop) {
+        typing();
+    }
+})
