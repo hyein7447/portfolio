@@ -5,7 +5,7 @@ window.addEventListener('mousemove',(e)=>{
     circle.style.top = `${e.clientY}px`
 })
 
-$ ('.wrap').fullpage({
+$('.wrap').fullpage({
     scrollBar:true, // 스크롤바 표시하기 (기본값false)
     scrollingSpeed:600, //스크롤바 전환속도 (기본값 1000)
     navigation:true, //우측 내비게이션 표시하기 (기본값 false)
@@ -15,10 +15,31 @@ $ ('.wrap').fullpage({
             $('.s4 .right').animate({
                 opacity:1,
                 top:50,
+            },1200)
+        }
+        if(anchor == 's2'){
+            $('.s2 .container p').get(0).classList.add('animate__fadeInUp')
+            $('.s2 .container p').animate({
+                opacity:1,
             },1500)
+        }
+        if(anchor == 's3'){
+            $('.s3 .top .skill_contents').get(0).classList.add('animate__fadeInDown')
+            $('.s3 .top .skill_contents').animate({
+                opacity:1,
+            },1200)
+            setTimeout(function(){
+                $('.s3 .bottom .skill_contents').get(0).classList.add('animate__fadeInDown')
+                $('.s3 .bottom .skill_contents').animate({
+                    opacity:1,
+                })
+            },800)
         }
         if(anchor == 's5'){
             $('.s5 .bg .color_bg').get(0).classList.add('scale')
+        }
+        if(anchor == 's6'){
+            typing()
         }
     }
 })
@@ -32,6 +53,8 @@ menu_open_a.forEach((t,i)=>{
     })
 })
 
+
+//typing 함수
 const content = "성장해 나가는 프론트엔드 개발자 김혜인의 포트폴리오였습니다.\n 끝까지 봐주셔서 감사합니다 :)";
 const text = document.querySelector(".typing");
 text.textContent = "";
@@ -46,14 +69,26 @@ function typing(){
         setTimeout(typing, 80)
     }
 }
-typing();
-
-const s6 = document.querySelector('.s6')
-console.log(s6.offsetTop)
 
 
-window.addEventListener('scroll',()=>{
-    if(s6.offsetTop) {
-        typing();
-    }
+
+const menu = document.querySelectorAll('.menu_open a')
+
+for(let a of menu){a.classList.remove('active')}
+menu[0].classList.add('active')
+
+menu.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        for(let a of menu){a.classList.remove('active')}
+        menu[i].classList.add('active')
+    })
+})
+
+const link_icon = document.querySelectorAll('.link_icon a')
+
+link_icon[1].addEventListener('click',()=>{
+    event.preventDefault();
+})
+link_icon[2].addEventListener('click',()=>{
+    event.preventDefault();
 })
