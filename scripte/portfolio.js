@@ -11,14 +11,22 @@ $('.wrap').fullpage({
     navigation:true, //우측 내비게이션 표시하기 (기본값 false)
     anchors: ['s1','s2','s3','s4','s5','s6'],
     afterLoad:function(anchor,index){
-        if(anchor == 's4'){
-            $('.s4 .right').animate({
-                opacity:1,
-                top:50,
-            },1200)
+        if (anchor == 's1'){
+            $('.nav .menu_open .a').get(0).classList.add('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
         }
         if(anchor == 's2'){
             $('.s2 .container p').get(0).classList.add('animate__fadeInUp')
+            $('.nav .menu_open .b').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
             $('.s2 .container p').animate({
                 opacity:1,
             },1500)
@@ -34,12 +42,42 @@ $('.wrap').fullpage({
                     opacity:1,
                 })
             },800)
+            $('.nav .menu_open .c').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
+        }
+        if(anchor == 's4'){
+            $('.s4 .right').animate({
+                opacity:1,
+                top:50,
+            },1200)
+            $('.nav .menu_open .d').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
         }
         if(anchor == 's5'){
             $('.s5 .bg .color_bg').get(0).classList.add('scale')
+            $('.nav .menu_open .e').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
         }
         if(anchor == 's6'){
             typing()
+            $('.nav .menu_open .f').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
         }
     }
 })
