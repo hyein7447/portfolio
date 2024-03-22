@@ -9,7 +9,7 @@ $('.wrap').fullpage({
     scrollBar:true, // 스크롤바 표시하기 (기본값false)
     scrollingSpeed:600, //스크롤바 전환속도 (기본값 1000)
     navigation:true, //우측 내비게이션 표시하기 (기본값 false)
-    anchors: ['s1','s2','s3','s4','s5','s6'],
+    anchors: ['s1','s2','s3','s4','s5','s6','s7'],
     afterLoad:function(anchor,index){
         if (anchor == 's1'){
             $('.nav .menu_open .a').get(0).classList.add('active')
@@ -18,6 +18,7 @@ $('.wrap').fullpage({
             $('.nav .menu_open .d').get(0).classList.remove('active')
             $('.nav .menu_open .e').get(0).classList.remove('active')
             $('.nav .menu_open .f').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
         }
         if(anchor == 's2'){
             $('.s2 .container p').get(0).classList.add('animate__fadeInUp')
@@ -27,6 +28,7 @@ $('.wrap').fullpage({
             $('.nav .menu_open .d').get(0).classList.remove('active')
             $('.nav .menu_open .e').get(0).classList.remove('active')
             $('.nav .menu_open .f').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
             $('.s2 .container p').animate({
                 opacity:1,
             },1500)
@@ -48,6 +50,7 @@ $('.wrap').fullpage({
             $('.nav .menu_open .d').get(0).classList.remove('active')
             $('.nav .menu_open .e').get(0).classList.remove('active')
             $('.nav .menu_open .f').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
         }
         if(anchor == 's4'){
             $('.s4 .right').animate({
@@ -60,6 +63,7 @@ $('.wrap').fullpage({
             $('.nav .menu_open .c').get(0).classList.remove('active')
             $('.nav .menu_open .e').get(0).classList.remove('active')
             $('.nav .menu_open .f').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
         }
         if(anchor == 's5'){
             $('.s5 .bg .color_bg').get(0).classList.add('scale')
@@ -69,6 +73,7 @@ $('.wrap').fullpage({
             $('.nav .menu_open .c').get(0).classList.remove('active')
             $('.nav .menu_open .d').get(0).classList.remove('active')
             $('.nav .menu_open .f').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
         }
         if(anchor == 's6'){
             typing()
@@ -78,6 +83,17 @@ $('.wrap').fullpage({
             $('.nav .menu_open .c').get(0).classList.remove('active')
             $('.nav .menu_open .d').get(0).classList.remove('active')
             $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .g').get(0).classList.remove('active')
+        }
+        if(anchor == 's7'){
+            typing()
+            $('.nav .menu_open .g').get(0).classList.add('active')
+            $('.nav .menu_open .a').get(0).classList.remove('active')
+            $('.nav .menu_open .b').get(0).classList.remove('active')
+            $('.nav .menu_open .c').get(0).classList.remove('active')
+            $('.nav .menu_open .d').get(0).classList.remove('active')
+            $('.nav .menu_open .e').get(0).classList.remove('active')
+            $('.nav .menu_open .f').get(0).classList.remove('active')
         }
     }
 })
@@ -130,3 +146,105 @@ link_icon[1].addEventListener('click',()=>{
 link_icon[2].addEventListener('click',()=>{
     event.preventDefault();
 })
+
+
+const view = document.querySelector('.page1 .inner a')
+const view2 = document.querySelector('.page2 .inner a')
+const view3 = document.querySelector('.banner .inner a')
+const view4 = document.querySelector('.poster1 .inner a')
+const view5 = document.querySelector('.poster2 .inner a')
+
+const page1_pop = document.querySelector('.page1_pop')
+const page2_pop = document.querySelector('.page2_pop')
+const banner_pop = document.querySelector('.banner_pop')
+const poster1_pop = document.querySelector('.poster1_pop')
+const poster2_pop = document.querySelector('.poster2_pop')
+
+const page1 = document.querySelector('.page1')
+const page2 = document.querySelector('.page2')
+
+const inner1 = document.querySelector('.page1 .inner')
+const inner2 = document.querySelector('.page2 .inner')
+
+const body = document.querySelector('body, html')
+console.log(page1,inner1)
+
+page1_pop.style.display = 'none'
+page2_pop.style.display = 'none'
+banner_pop.style.display = 'none'
+poster1_pop.style.display = 'none'
+poster2_pop.style.display = 'none'
+
+view.addEventListener('click', function() {
+    page1_pop.style.display = 'flex'
+    body.style.overflow = 'hidden'
+    event.preventDefault();
+})
+
+page1_pop.addEventListener('click', function() {
+    page1_pop.style.display = 'none'
+    body.style.overflow = 'auto'
+    event.preventDefault();
+})
+view2.addEventListener('click', function() {
+    page2_pop.style.display = 'flex'
+    body.style.overflow = 'hidden'
+    event.preventDefault();
+})
+
+page2_pop.addEventListener('click', function() {
+    page2_pop.style.display = 'none'
+    body.style.overflow = 'auto'
+    event.preventDefault();
+})
+
+view3.addEventListener('click', function() {
+    banner_pop.style.display = 'flex'
+    body.style.overflow = 'hidden'
+    event.preventDefault();
+})
+
+banner_pop.addEventListener('click', function() {
+    banner_pop.style.display = 'none'
+    body.style.overflow = 'auto'
+    event.preventDefault();
+})
+
+view4.addEventListener('click', function() {
+    poster1_pop.style.display = 'flex'
+    body.style.overflow = 'hidden'
+    event.preventDefault();
+})
+
+poster1_pop.addEventListener('click', function() {
+    poster1_pop.style.display = 'none'
+    body.style.overflow = 'auto'
+    event.preventDefault();
+})
+
+view5.addEventListener('click', function() {
+    poster2_pop.style.display = 'flex'
+    body.style.overflow = 'hidden'
+    event.preventDefault();
+})
+
+poster2_pop.addEventListener('click', function() {
+    poster2_pop.style.display = 'none'
+    body.style.overflow = 'auto'
+    event.preventDefault();
+})
+
+
+
+
+$('.inner a').click(function(event) {
+    $.fn.fullpage.setAllowScrolling(false); // fullpage 스크롤 비활성화
+    event.preventDefault(); // 기본 동작 방지
+});
+
+$('.page1_pop').click(function(event) {
+    if (event.target === this) {
+        $.fn.fullpage.setAllowScrolling(true); // fullpage 스크롤 활성화
+    }
+    event.preventDefault(); // 기본 동작 방지
+});

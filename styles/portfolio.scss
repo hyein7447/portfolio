@@ -32,7 +32,7 @@ body {
                     margin-top: 30px; 
                     font-size: 1.5rem;
                     font-weight: 700;
-                    margin: 20px 40px;
+                    margin: 20px 30px;
                     &:hover {
                         color: #FBAE17;
                     }
@@ -751,6 +751,304 @@ body {
                 }
             }
             .s6 {
+                background-color: #fff;
+                .bg {
+                    height: 730px;
+                    
+                    h2 {
+                        font-size: 2.7rem;
+                        position: relative;
+                        padding-top: 40px;
+                        padding-left: 95px;
+                        letter-spacing: -1.5px;
+                        font-weight: 500;
+                        margin-left: 80px;
+                        height: 150px;
+                        &::before {
+                            content: '04';
+                            font-size: 7rem;
+                            font-weight: 700;
+                            color: rgba($color: #000, $alpha: 0.1);
+                            position: absolute;
+                            left: 0;
+                            top: -20px;
+                        }
+                    }
+                    .container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .page1 {
+                            width: 300px;
+                            height: 620px;
+                            background-color: #FBAE17;
+                            margin-right: 50px;
+                            background: url(../images/page_02.jpg) no-repeat center;
+                            .inner {
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgba($color: #000000, $alpha: 0.7);
+                                width: 300px;
+                                height: 620px;
+                                p {
+                                    font-size: 1.7rem;
+                                    font-weight: 700;
+                                    color: #fff;
+                                }
+                                a {
+                                    font-size: 1rem;
+                                    color: #fff;
+                                    font-weight: 500;
+                                    background-color: #000;
+                                    padding: 6px 15px;
+                                    border-radius: 10px;
+                                    margin-top: 20px;
+                                }
+                                .page1_pop {
+                                    background-color: rgba(0,0,0, 0.5);
+                                    width: 100%;
+                                    height: 100vh;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    z-index: 999;
+                                    .page_img {
+                                        width: 900px;
+                                        height: 900px;
+                                        overflow-y: auto;
+                                        overflow-x: hidden;
+                                        background-color: #fff;
+                                        text-align: center;
+                                        img {
+                                            width: 100%;
+                                            padding: 0 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .page2 {
+                            width: 300px;
+                            height: 620px;
+                            background-color: pink;
+                            margin-right: 50px;
+                            background: url(../images/page_01.jpg) no-repeat center;
+                            .inner {
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgba($color: #000000, $alpha: 0.7);
+                                width: 300px;
+                                height: 620px;
+                                p {
+                                    font-size: 1.7rem;
+                                    font-weight: 700;
+                                    color: #fff;
+                                }
+                                a {
+                                    font-size: 1rem;
+                                    color: #fff;
+                                    font-weight: 500;
+                                    background-color: #000;
+                                    padding: 6px 15px;
+                                    border-radius: 10px;
+                                    margin-top: 20px;
+                                }
+                                .page2_pop {
+                                    background-color: rgba(0,0,0, 0.5);
+                                    width: 100%;
+                                    height: 100vh;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    z-index: 999;
+                                    .page_img {
+                                        width: 900px;
+                                        height: 900px;
+                                        overflow-y: auto;
+                                        overflow-x: hidden;
+                                        background-color: #fff;
+                                        text-align: center;
+                                        img {
+                                            width: 100%;
+                                            padding: 0 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .col {
+                            display: flex;
+                            flex-flow: column;
+                            .banner {
+                                width: 800px;
+                                height: 200px;
+                                background-color: aqua;
+                                background: url(../images/banner_pop.jpg);
+                                .inner {
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: rgba($color: #000000, $alpha: 0.7);
+                                    width: 800px;
+                                    height: 200px;
+                                    p {                                    
+                                        font-size: 1.7rem;
+                                        font-weight: 700;
+                                        color: #fff;
+                                    }
+                                    a {
+                                        font-size: 1rem;
+                                        color: #fff;
+                                        font-weight: 500;
+                                        background-color: #000;
+                                        padding: 6px 15px;
+                                        border-radius: 10px;
+                                        margin-top: 20px;
+                                    }
+                                    .banner_pop {
+                                        background-color: rgba(0,0,0, 0.5);
+                                        width: 100%;
+                                        height: 100vh;
+                                        position: fixed;
+                                        top: 0;
+                                        left: 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        z-index: 999;
+                                        .bnr_img {
+                                            width: 1280px;
+                                            height: 400px;
+                                            overflow-y: auto;
+                                            overflow-x: hidden;
+                                            background-color: #fff;
+                                            text-align: center;
+                                            overflow: hidden;
+                                            img {}
+                                        }
+                                    }
+                                }
+                            }
+                            .poster {
+                                display: flex;
+                                margin-top: 50px;
+                                .poster1 {
+                                    width: 375px;
+                                    height: 370px;
+                                    background-color: tomato;
+                                    margin-right: 50px;
+                                    background: url(../images/poster_pop_01.jpg);
+                                    .inner {
+                                        display: flex;
+                                        flex-flow: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: rgba($color: #000000, $alpha: 0.7);
+                                        width: 375px;
+                                        height: 370px;
+                                        p {
+                                            font-size: 1.7rem;
+                                            font-weight: 700;
+                                            color: #fff;
+                                        }
+                                        a {
+                                            font-size: 1rem;
+                                            color: #fff;
+                                            font-weight: 500;
+                                            background-color: #000;
+                                            padding: 6px 15px;
+                                            border-radius: 10px;
+                                            margin-top: 20px;
+                                        }
+                                        .poster1_pop {
+                                            background-color: rgba(0,0,0, 0.5);
+                                            width: 100%;
+                                            height: 100vh;
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            z-index: 999;
+                                            .poster_img {
+                                                width: 840px;
+                                                height: 800px;
+                                                overflow-y: auto;
+                                                overflow-x: hidden;
+                                                background-color: #fff;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                                .poster2 {
+                                    width: 375px;
+                                    height: 370px;
+                                    background-color: pink;
+                                    background: url(../images/poster_pop_02.jpg);
+                                    .inner {
+                                        display: flex;
+                                        flex-flow: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: rgba($color: #000000, $alpha: 0.7);
+                                        width: 375px;
+                                        height: 370px;
+                                        p {
+                                            font-size: 1.7rem;
+                                            font-weight: 700;
+                                            color: #fff;
+                                        }
+                                        a {
+                                            font-size: 1rem;
+                                            color: #fff;
+                                            font-weight: 500;
+                                            background-color: #000;
+                                            padding: 6px 15px;
+                                            border-radius: 10px;
+                                            margin-top: 20px;
+                                        }
+                                        .poster2_pop {
+                                            background-color: rgba(0,0,0, 0.5);
+                                            width: 100%;
+                                            height: 100vh;
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            z-index: 999;
+                                            .poster_img {
+                                                width: 840px;
+                                                height: 800px;
+                                                overflow-y: auto;
+                                                overflow-x: hidden;
+                                                background-color: #fff;
+                                                text-align: center;
+                                                img {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .s7 {
                 .bg {
                     h2 {
                         font-size: 2.7rem;
@@ -961,8 +1259,6 @@ transform: translateX(0);
     }
 }
 
-
-
 // JS용 classList
 
 .hover {
@@ -977,4 +1273,8 @@ transform: translateX(0);
 
 .active {
     color: #FBAE17 !important;
+}
+
+.opacity {
+    opacity: 1;
 }

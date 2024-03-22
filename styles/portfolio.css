@@ -38,7 +38,7 @@ body header .nav .menu_open a {
   margin-top: 30px;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 20px 40px;
+  margin: 20px 30px;
 }
 body header .nav .menu_open a:hover {
   color: #FBAE17;
@@ -737,6 +737,12 @@ body main .wrap .s5 .link {
   animation: loop 50s infinite linear;
   margin-bottom: 40px;
 }
+body main .wrap .s6 {
+  background-color: #fff;
+}
+body main .wrap .s6 .bg {
+  height: 730px;
+}
 body main .wrap .s6 .bg h2 {
   font-size: 2.7rem;
   position: relative;
@@ -746,7 +752,6 @@ body main .wrap .s6 .bg h2 {
   font-weight: 500;
   margin-left: 80px;
   height: 150px;
-  margin-top: 100px;
 }
 body main .wrap .s6 .bg h2::before {
   content: "04";
@@ -757,27 +762,317 @@ body main .wrap .s6 .bg h2::before {
   left: 0;
   top: -20px;
 }
-body main .wrap .s6 .bg .content {
+body main .wrap .s6 .bg .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .wrap .s6 .bg .container .page1 {
+  width: 300px;
+  height: 620px;
+  background-color: #FBAE17;
+  margin-right: 50px;
+  background: url(../images/page_02.jpg) no-repeat center;
+}
+body main .wrap .s6 .bg .container .page1 .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 620px;
+}
+body main .wrap .s6 .bg .container .page1 .inner p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .wrap .s6 .bg .container .page1 .inner a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body main .wrap .s6 .bg .container .page1 .inner .page1_pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+body main .wrap .s6 .bg .container .page1 .inner .page1_pop .page_img {
+  width: 900px;
+  height: 900px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+body main .wrap .s6 .bg .container .page1 .inner .page1_pop .page_img img {
+  width: 100%;
+  padding: 0 20px;
+}
+body main .wrap .s6 .bg .container .page2 {
+  width: 300px;
+  height: 620px;
+  background-color: pink;
+  margin-right: 50px;
+  background: url(../images/page_01.jpg) no-repeat center;
+}
+body main .wrap .s6 .bg .container .page2 .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 620px;
+}
+body main .wrap .s6 .bg .container .page2 .inner p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .wrap .s6 .bg .container .page2 .inner a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body main .wrap .s6 .bg .container .page2 .inner .page2_pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+body main .wrap .s6 .bg .container .page2 .inner .page2_pop .page_img {
+  width: 900px;
+  height: 900px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+body main .wrap .s6 .bg .container .page2 .inner .page2_pop .page_img img {
+  width: 100%;
+  padding: 0 20px;
+}
+body main .wrap .s6 .bg .container .col {
+  display: flex;
+  flex-flow: column;
+}
+body main .wrap .s6 .bg .container .col .banner {
+  width: 800px;
+  height: 200px;
+  background-color: aqua;
+  background: url(../images/banner_pop.jpg);
+}
+body main .wrap .s6 .bg .container .col .banner .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 800px;
+  height: 200px;
+}
+body main .wrap .s6 .bg .container .col .banner .inner p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .wrap .s6 .bg .container .col .banner .inner a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body main .wrap .s6 .bg .container .col .banner .inner .banner_pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+body main .wrap .s6 .bg .container .col .banner .inner .banner_pop .bnr_img {
+  width: 1280px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+body main .wrap .s6 .bg .container .col .poster {
+  display: flex;
+  margin-top: 50px;
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 {
+  width: 375px;
+  height: 370px;
+  background-color: tomato;
+  margin-right: 50px;
+  background: url(../images/poster_pop_01.jpg);
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 375px;
+  height: 370px;
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 .inner p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 .inner a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 .inner .poster1_pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+body main .wrap .s6 .bg .container .col .poster .poster1 .inner .poster1_pop .poster_img {
+  width: 840px;
+  height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 {
+  width: 375px;
+  height: 370px;
+  background-color: pink;
+  background: url(../images/poster_pop_02.jpg);
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 375px;
+  height: 370px;
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 .inner p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 .inner a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 .inner .poster2_pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+body main .wrap .s6 .bg .container .col .poster .poster2 .inner .poster2_pop .poster_img {
+  width: 840px;
+  height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+body main .wrap .s7 .bg h2 {
+  font-size: 2.7rem;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 95px;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+  margin-left: 80px;
+  height: 150px;
+  margin-top: 100px;
+}
+body main .wrap .s7 .bg h2::before {
+  content: "04";
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+body main .wrap .s7 .bg .content {
   position: relative;
 }
-body main .wrap .s6 .bg .content p {
+body main .wrap .s7 .bg .content p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.5;
   margin-bottom: 50px;
 }
-body main .wrap .s6 .bg .content .arrow img {
+body main .wrap .s7 .bg .content .arrow img {
   width: 50px;
   position: absolute;
   top: 20px;
   right: 530px;
   animation: swingY 1s ease infinite;
 }
-body main .wrap .s6 .bg .content .type {
+body main .wrap .s7 .bg .content .type {
   display: flex;
   justify-content: center;
 }
-body main .wrap .s6 .bg .content .type .qr {
+body main .wrap .s7 .bg .content .type .qr {
   background-color: #E8DED6;
   position: relative;
   width: 400px;
@@ -785,18 +1080,18 @@ body main .wrap .s6 .bg .content .type .qr {
   text-align: center;
   margin-right: 50px;
 }
-body main .wrap .s6 .bg .content .type .qr span {
+body main .wrap .s7 .bg .content .type .qr span {
   font-size: 1.75rem;
   display: block;
   padding-top: 20px;
 }
-body main .wrap .s6 .bg .content .type .qr img {
+body main .wrap .s7 .bg .content .type .qr img {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
-body main .wrap .s6 .bg .content .type .email form {
+body main .wrap .s7 .bg .content .type .email form {
   padding: 20px 0;
   display: flex;
   flex-flow: column;
@@ -804,11 +1099,11 @@ body main .wrap .s6 .bg .content .type .email form {
   background-color: #E8DED6;
   width: 500px;
 }
-body main .wrap .s6 .bg .content .type .email form .my_email {
+body main .wrap .s7 .bg .content .type .email form .my_email {
   font-size: 1.75rem;
   margin-bottom: 20px;
 }
-body main .wrap .s6 .bg .content .type .email form #user_name {
+body main .wrap .s7 .bg .content .type .email form #user_name {
   border: 1px solid #333;
   display: block;
   margin-bottom: 10px;
@@ -817,13 +1112,13 @@ body main .wrap .s6 .bg .content .type .email form #user_name {
   border-radius: 5px;
   background-color: rgba(249, 245, 234, 0.5);
 }
-body main .wrap .s6 .bg .content .type .email form #user_name::-moz-placeholder {
+body main .wrap .s7 .bg .content .type .email form #user_name::-moz-placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form #user_name::placeholder {
+body main .wrap .s7 .bg .content .type .email form #user_name::placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form #user_email {
+body main .wrap .s7 .bg .content .type .email form #user_email {
   margin-bottom: 10px;
   border: 1px solid #333;
   display: block;
@@ -832,36 +1127,36 @@ body main .wrap .s6 .bg .content .type .email form #user_email {
   border-radius: 5px;
   background-color: rgba(249, 245, 234, 0.5);
 }
-body main .wrap .s6 .bg .content .type .email form #user_email::-moz-placeholder {
+body main .wrap .s7 .bg .content .type .email form #user_email::-moz-placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form #user_email::placeholder {
+body main .wrap .s7 .bg .content .type .email form #user_email::placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form textarea {
+body main .wrap .s7 .bg .content .type .email form textarea {
   width: 400px;
   height: 155px;
   border-radius: 5px;
   padding: 5px 10px;
   background-color: rgba(249, 245, 234, 0.5);
 }
-body main .wrap .s6 .bg .content .type .email form textarea::-moz-placeholder {
+body main .wrap .s7 .bg .content .type .email form textarea::-moz-placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form textarea::placeholder {
+body main .wrap .s7 .bg .content .type .email form textarea::placeholder {
   font-size: 0.875rem;
 }
-body main .wrap .s6 .bg .content .type .email form #submit_btn {
+body main .wrap .s7 .bg .content .type .email form #submit_btn {
   margin-top: 20px;
   border: 1px solid #333;
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
 }
-body main .wrap .s6 .bg .content .type .email form #submit_btn:hover {
+body main .wrap .s7 .bg .content .type .email form #submit_btn:hover {
   border-radius: 50%;
 }
-body main .wrap .s6 .bg .content .copy {
+body main .wrap .s7 .bg .content .copy {
   font-size: 0.875rem;
   margin: 50px 0;
 }
@@ -962,4 +1257,8 @@ body main .wrap .s6 .bg .content .copy {
 
 .active {
   color: #FBAE17 !important;
+}
+
+.opacity {
+  opacity: 1;
 }/*# sourceMappingURL=portfolio.css.map */
