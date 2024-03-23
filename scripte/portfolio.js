@@ -248,3 +248,27 @@ $('.page1_pop').click(function(event) {
     }
     event.preventDefault(); // 기본 동작 방지
 });
+$('.page2_pop').click(function(event) {
+    if (event.target === this) {
+        $.fn.fullpage.setAllowScrolling(true); // fullpage 스크롤 활성화
+    }
+    event.preventDefault(); // 기본 동작 방지
+});
+$('.banner_pop').click(function(event) {
+    if (event.target === this) {
+        $.fn.fullpage.setAllowScrolling(true); // fullpage 스크롤 활성화
+    }
+    event.preventDefault(); // 기본 동작 방지
+});
+$('.poster1_pop').click(function(event) {
+    if (event.target === this) {
+        $.fn.fullpage.setAllowScrolling(true); // fullpage 스크롤 활성화
+    }
+    event.preventDefault(); // 기본 동작 방지
+});
+$('.poster2_pop').click(function(event) {
+    if (event.target === this) {
+        $.fn.fullpage.setAllowScrolling(true); // fullpage 스크롤 활성화
+    }
+    event.preventDefault(); // 기본 동작 방지
+});
